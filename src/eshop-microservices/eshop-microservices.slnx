@@ -1,0 +1,9 @@
+<Solution>
+  <Folder Name="/BuildingBlocks/">
+    <Project Path="../BuildingBlocks/BuildingBlocks.csproj" Id="e00eb6d7-b3b1-4038-8e64-b1cba9afeba7" />
+  </Folder>
+  <Folder Name="/Services/" />
+  <Folder Name="/Services/Catalog/">
+    <Project Path="Catalog.API/Catalog.API.csproj" />
+  </Folder>
+</Solution>
