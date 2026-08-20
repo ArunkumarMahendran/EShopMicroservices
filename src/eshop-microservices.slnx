@@ -3,5 +3,6 @@
   <Project Path="docker-compose.dcproj">
     <Build />
   </Project>
+  <Project Path="eshop-microservices/Basket.Api/Basket.API.csproj" Id="7d3968e0-006f-4efe-8f9a-118e24440fa4" />
   <Project Path="eshop-microservices/Catalog.API/Catalog.API.csproj" />
 </Solution>

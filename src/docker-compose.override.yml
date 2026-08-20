@@ -10,6 +10,17 @@ services:
       - "5433:5432"
     volumes:
       - postgres_dev1_catalog:/var/lib/postgresql/data/
+  basketDb:
+    container_name: basketDb
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=123456      
+      - POSTGRES_DB=BasketDb
+    restart: always
+    ports:
+      - "5434:5432"
+    volumes:
+      - postgres_dev1_basket:/var/lib/postgresql/data/
       
   catalog.api:
     environment:
