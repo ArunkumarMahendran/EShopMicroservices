@@ -3,14 +3,22 @@ services:
     image: postgres:17
   basketDb:
     image: postgres:17
-
+  distributedcache:
+    image: redis:7.0.11-alpine
   catalog.api:
     image: ${DOCKER_REGISTRY-}catalogapi
     build:
       context: .
       dockerfile: eshop-microservices/Catalog.API/Dockerfile
 
+  basket.api:
+    image: ${DOCKER_REGISTRY-}basketapi
+    build:
+      context: .
+      dockerfile: eshop-microservices/Basket.Api/Dockerfile
+
 volumes:
   postgres_dev1_catalog:  
   postgres_dev1_basket:  
+
 
